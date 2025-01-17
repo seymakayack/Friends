@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F4DA5F2D2D3A302500A2E2C1 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F4DA5F2C2D3A302500A2E2C1 /* CombineMoya */; };
+		F4DA5F2F2D3A302500A2E2C1 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = F4DA5F2E2D3A302500A2E2C1 /* Moya */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F4DA5EE42D3A2F2C00A2E2C1 /* FriendsTVShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendsTVShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4DA5F2F2D3A302500A2E2C1 /* Moya in Frameworks */,
+				F4DA5F2D2D3A302500A2E2C1 /* CombineMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,8 @@
 			);
 			name = FriendsTVShow;
 			packageProductDependencies = (
+				F4DA5F2C2D3A302500A2E2C1 /* CombineMoya */,
+				F4DA5F2E2D3A302500A2E2C1 /* Moya */,
 			);
 			productName = FriendsTVShow;
 			productReference = F4DA5EE42D3A2F2C00A2E2C1 /* FriendsTVShow.app */;
@@ -107,6 +116,9 @@
 			);
 			mainGroup = F4DA5EDB2D3A2F2B00A2E2C1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F4DA5F2B2D3A302500A2E2C1 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F4DA5EE52D3A2F2C00A2E2C1 /* Products */;
 			projectDirPath = "";
@@ -149,8 +161,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FriendsTVShow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -177,8 +189,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FriendsTVShow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,6 +347,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F4DA5F2B2D3A302500A2E2C1 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F4DA5F2C2D3A302500A2E2C1 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4DA5F2B2D3A302500A2E2C1 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		F4DA5F2E2D3A302500A2E2C1 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4DA5F2B2D3A302500A2E2C1 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F4DA5EDC2D3A2F2B00A2E2C1 /* Project object */;
 }
