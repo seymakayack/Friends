@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TVShowNameCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="1600" id="tvq-V1-vhu" customClass="TVShowNameCell" customModule="FriendsTVShow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="450"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tvq-V1-vhu" id="pOl-IY-zCX">
+                <rect key="frame" x="0.0" y="0.0" width="402" height="450"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oEv-PT-Kx7">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="450"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4E-r3-Ofv" userLabel="TopView">
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="306"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Friends" translatesAutoresizingMaskIntoConstraints="NO" id="C2N-Jr-bta">
+                                        <rect key="frame" x="0.0" y="0.0" width="402" height="306"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5UJ-fS-rfD" userLabel=" MediumView">
+                                <rect key="frame" x="0.0" y="314" width="402" height="69"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBR-BM-Rbp">
+                                        <rect key="frame" x="129" y="0.0" width="144" height="69"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Friends">
+                                                <attributes>
+                                                    <font key="NSFont" size="48" name=".SFNS-Regular"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ZBR-BM-Rbp" firstAttribute="centerX" secondItem="5UJ-fS-rfD" secondAttribute="centerX" id="CVe-UJ-u87"/>
+                                    <constraint firstItem="ZBR-BM-Rbp" firstAttribute="centerY" secondItem="5UJ-fS-rfD" secondAttribute="centerY" id="Hpf-Gt-LtX"/>
+                                    <constraint firstItem="ZBR-BM-Rbp" firstAttribute="top" secondItem="5UJ-fS-rfD" secondAttribute="top" id="g8n-dv-Xcf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOO-bk-PLq" userLabel="BottomView">
+                                <rect key="frame" x="0.0" y="391" width="402" height="59"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="xLP-2U-k4K">
+                                        <rect key="frame" x="47.333333333333343" y="11" width="307.33333333333326" height="37"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 episode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCg-aY-5zu">
+                                                <rect key="frame" x="0.0" y="0.0" width="160.33333333333334" height="37"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Season" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBI-x1-HMp">
+                                                <rect key="frame" x="172.33333333333331" y="0.0" width="135" height="37"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="xLP-2U-k4K" firstAttribute="top" secondItem="bOO-bk-PLq" secondAttribute="top" constant="11" id="8Ty-hr-k3u"/>
+                                    <constraint firstItem="xLP-2U-k4K" firstAttribute="leading" secondItem="bOO-bk-PLq" secondAttribute="leading" constant="47.333333333333343" id="NTa-ox-WK6"/>
+                                    <constraint firstItem="xLP-2U-k4K" firstAttribute="centerX" secondItem="bOO-bk-PLq" secondAttribute="centerX" id="a2b-Bi-wvX"/>
+                                    <constraint firstItem="xLP-2U-k4K" firstAttribute="centerY" secondItem="bOO-bk-PLq" secondAttribute="centerY" id="zgw-nI-T4c"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="oEv-PT-Kx7" secondAttribute="trailing" id="Cra-nZ-gAT"/>
+                    <constraint firstItem="oEv-PT-Kx7" firstAttribute="top" secondItem="pOl-IY-zCX" secondAttribute="top" id="Opt-tv-Xri"/>
+                    <constraint firstItem="oEv-PT-Kx7" firstAttribute="leading" secondItem="pOl-IY-zCX" secondAttribute="leading" id="g7m-KR-egW"/>
+                    <constraint firstAttribute="bottom" secondItem="oEv-PT-Kx7" secondAttribute="bottom" id="xZc-ts-61S"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="TVShowEpisode" destination="eCg-aY-5zu" id="feI-5K-vl8"/>
+                <outlet property="TVShowImage" destination="C2N-Jr-bta" id="mwI-Cu-MJY"/>
+                <outlet property="TVShowName" destination="ZBR-BM-Rbp" id="kSi-kw-bD6"/>
+                <outlet property="TVShowSeason" destination="CBI-x1-HMp" id="y3T-jt-8LA"/>
+            </connections>
+            <point key="canvasLocation" x="-91.603053435114504" y="249.29577464788733"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Friends" width="4320" height="3240"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

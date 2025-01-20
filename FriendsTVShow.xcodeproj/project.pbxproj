@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F4DA5F2D2D3A302500A2E2C1 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F4DA5F2C2D3A302500A2E2C1 /* CombineMoya */; };
-		F4DA5F2F2D3A302500A2E2C1 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = F4DA5F2E2D3A302500A2E2C1 /* Moya */; };
+		F4F0549D2D3D462200E54E4B /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F4F0549C2D3D462200E54E4B /* CombineMoya */; };
+		F4F0549F2D3D462200E54E4B /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = F4F0549E2D3D462200E54E4B /* Moya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,8 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4DA5F2F2D3A302500A2E2C1 /* Moya in Frameworks */,
-				F4DA5F2D2D3A302500A2E2C1 /* CombineMoya in Frameworks */,
+				F4F0549F2D3D462200E54E4B /* Moya in Frameworks */,
+				F4F0549D2D3D462200E54E4B /* CombineMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,8 +85,8 @@
 			);
 			name = FriendsTVShow;
 			packageProductDependencies = (
-				F4DA5F2C2D3A302500A2E2C1 /* CombineMoya */,
-				F4DA5F2E2D3A302500A2E2C1 /* Moya */,
+				F4F0549C2D3D462200E54E4B /* CombineMoya */,
+				F4F0549E2D3D462200E54E4B /* Moya */,
 			);
 			productName = FriendsTVShow;
 			productReference = F4DA5EE42D3A2F2C00A2E2C1 /* FriendsTVShow.app */;
@@ -117,7 +117,7 @@
 			mainGroup = F4DA5EDB2D3A2F2B00A2E2C1;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				F4DA5F2B2D3A302500A2E2C1 /* XCRemoteSwiftPackageReference "Moya" */,
+				F4F0549B2D3D462200E54E4B /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F4DA5EE52D3A2F2C00A2E2C1 /* Products */;
@@ -349,7 +349,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F4DA5F2B2D3A302500A2E2C1 /* XCRemoteSwiftPackageReference "Moya" */ = {
+		F4F0549B2D3D462200E54E4B /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
 			requirement = {
@@ -360,14 +360,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F4DA5F2C2D3A302500A2E2C1 /* CombineMoya */ = {
+		F4F0549C2D3D462200E54E4B /* CombineMoya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F4DA5F2B2D3A302500A2E2C1 /* XCRemoteSwiftPackageReference "Moya" */;
+			package = F4F0549B2D3D462200E54E4B /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = CombineMoya;
 		};
-		F4DA5F2E2D3A302500A2E2C1 /* Moya */ = {
+		F4F0549E2D3D462200E54E4B /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F4DA5F2B2D3A302500A2E2C1 /* XCRemoteSwiftPackageReference "Moya" */;
+			package = F4F0549B2D3D462200E54E4B /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
 		};
 /* End XCSwiftPackageProductDependency section */

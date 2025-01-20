@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ActorCell" id="iN0-l3-epB" customClass="ActorCell" customModule="FriendsTVShow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="183" height="301"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Twq-XM-wKw">
+                    <rect key="frame" x="0.0" y="0.0" width="183" height="301"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pat-vn-9Et" userLabel="Topview">
+                            <rect key="frame" x="0.0" y="0.0" width="183" height="240"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Monica" translatesAutoresizingMaskIntoConstraints="NO" id="TvG-Nx-rXW">
+                                    <rect key="frame" x="0.0" y="0.0" width="183" height="240"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHC-Ok-AMu" userLabel="BottomView">
+                            <rect key="frame" x="0.0" y="242" width="183" height="59"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ONZ-3z-BfC">
+                                    <rect key="frame" x="44.666666666666657" y="11" width="94" height="37"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monica Geller" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcJ-L8-sUv">
+                                            <rect key="frame" x="0.0" y="0.0" width="94" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Courtney Cox" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IW-Jq-vSe">
+                                            <rect key="frame" x="0.0" y="19" width="94" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="ONZ-3z-BfC" firstAttribute="centerX" secondItem="lHC-Ok-AMu" secondAttribute="centerX" id="mfY-4h-ghV"/>
+                                <constraint firstItem="ONZ-3z-BfC" firstAttribute="centerY" secondItem="lHC-Ok-AMu" secondAttribute="centerY" id="yCb-ez-lAa"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Twq-XM-wKw" secondAttribute="bottom" id="1KA-mx-dWK"/>
+                <constraint firstItem="Twq-XM-wKw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1Mf-iH-TLN"/>
+                <constraint firstItem="Twq-XM-wKw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8pG-7d-uve"/>
+                <constraint firstAttribute="trailing" secondItem="Twq-XM-wKw" secondAttribute="trailing" id="I8C-1n-Lgu"/>
+                <constraint firstItem="Twq-XM-wKw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="LQl-CF-CqD"/>
+                <constraint firstItem="Twq-XM-wKw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TOp-gQ-HHg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="actorImage" destination="TvG-Nx-rXW" id="XMm-XT-xvz"/>
+                <outlet property="actorName" destination="7IW-Jq-vSe" id="fZa-4A-1hj"/>
+                <outlet property="characterName" destination="WcJ-L8-sUv" id="fcc-A0-3Vo"/>
+            </connections>
+            <point key="canvasLocation" x="-147.32824427480915" y="78.521126760563391"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Monica" width="250" height="338"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

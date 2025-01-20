@@ -10,14 +10,14 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow? // UIWindow tanımı
+    var window: UIWindow?
 
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let rootViewController = FriendsDetailsViewController()
+        let rootViewController = FriendsTableViewController()
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
         

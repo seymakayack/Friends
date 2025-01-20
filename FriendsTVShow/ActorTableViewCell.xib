@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ActorTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="274" id="NYR-5u-WOy" customClass="ActorTableViewCell" customModule="FriendsTVShow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="274"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NYR-5u-WOy" id="hGA-1e-WFm">
+                <rect key="frame" x="0.0" y="0.0" width="402" height="274"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Jpp-dV-JXz">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="274"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMc-ks-Rtk">
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="57"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtR-6n-lgx">
+                                        <rect key="frame" x="175" y="18.333333333333336" width="52.333333333333343" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="wtR-6n-lgx" firstAttribute="centerX" secondItem="hMc-ks-Rtk" secondAttribute="centerX" id="Eia-xz-8EB"/>
+                                    <constraint firstItem="wtR-6n-lgx" firstAttribute="centerY" secondItem="hMc-ks-Rtk" secondAttribute="centerY" id="Sed-OK-c2M"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="nrZ-vV-RB2">
+                                <rect key="frame" x="0.0" y="59" width="402" height="215"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="x3r-Yi-3nM">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Jpp-dV-JXz" firstAttribute="leading" secondItem="hGA-1e-WFm" secondAttribute="leading" id="ZqV-vh-O4D"/>
+                    <constraint firstAttribute="bottom" secondItem="Jpp-dV-JXz" secondAttribute="bottom" id="bM8-wF-Akx"/>
+                    <constraint firstAttribute="trailing" secondItem="Jpp-dV-JXz" secondAttribute="trailing" id="oFa-Sa-xCf"/>
+                    <constraint firstItem="Jpp-dV-JXz" firstAttribute="top" secondItem="hGA-1e-WFm" secondAttribute="top" id="yXE-aC-xlH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ActorsLabel" destination="Sed-OK-c2M" id="Kzp-ba-0PI"/>
+                <outlet property="collectionView" destination="nrZ-vV-RB2" id="3Oh-jl-qmt"/>
+            </connections>
+            <point key="canvasLocation" x="301.52671755725191" y="15.492957746478874"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
